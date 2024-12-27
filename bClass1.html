@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- !Metadatos básicos -->
+        <!-- Define la codificación de caracteres del documento para que se muestren correctamente caracteres especiales como á, ñ, é, etc. -->
+        <meta charset="UTF-8">
+        <!-- Ajusta el ancho de la página al ancho del dispositivo y establece un nivel de zoom inicial de 1. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ?Define el título de la página que aparecerá en la pestaña del navegador o en los resultados de búsqueda. -->
+        <title>Curso de Desarrollo Web - Aprende HTML, CSS y JavaScript</title>
+        <!-- Proporciona una descripción breve de la página que los motores de búsqueda muestran en los resultados. -->
+        <meta name="description" content="Aprende desarrollo web desde cero con este curso gratuito. Crea sitios web modernos usando HTML, CSS y JavaScript.">
+        <!-- Define el autor del documento, útil para crédito del contenido o información de contacto. -->
+        <meta name="author" content="Juan Pérez">
+        <!-- Indica a los motores de búsqueda si deben indexar la página y seguir los enlaces. -->
+        <meta name="robots" content="index, follow">
+
+        <!-- !Metadatos para redes sociales usando Open Graph -->
+        <!-- Define el título de la página cuando se comparte en redes sociales como Facebook. -->
+        <meta property="og:title" content="Curso de Desarrollo Web - Aprende HTML, CSS y JavaScript">
+        <!-- Proporciona una descripción para acompañar el título en redes sociales. -->
+        <meta property="og:description" content="Aprende desarrollo web desde cero con este curso gratuito.">
+        <!-- URL de una imagen representativa que se mostrará al compartir el enlace. -->
+        <meta property="og:image" content="https://www.mipagina.com/images/curso-desarrollo-web.jpg">
+        <!-- URL de la página para que Open Graph sepa qué enlace referenciar. -->
+        <meta property="og:url" content="https://www.mipagina.com">
+        <!-- Define el tipo de contenido, en este caso un sitio web. -->
+        <meta property="og:type" content="website">
+
+        <!-- !Metadatos para Twitter -->
+        <!-- Configura el tipo de tarjeta que aparecerá al compartir en Twitter (imagen grande con texto). -->
+        <meta name="twitter:card" content="summary_large_image">
+        <!-- Define el título de la página al compartir en Twitter. -->
+        <meta name="twitter:title" content="Curso de Desarrollo Web - Aprende HTML, CSS y JavaScript">
+        <!-- Descripción para Twitter. -->
+        <meta name="twitter:description" content="Aprende desarrollo web desde cero con este curso gratuito.">
+        <!-- URL de la imagen que acompaña el enlace compartido en Twitter. -->
+        <meta name="twitter:image" content="https://www.mipagina.com/images/curso-desarrollo-web.jpg">
+
+        <!-- !Favicon -->
+        <!-- Icono pequeño que aparece en la pestaña del navegador o marcadores. -->
+        <link rel="icon" href="https://www.mipagina.com/favicon.ico" type="image/x-icon">
+
+        <!-- ! links: Vincula recursos externos, como hojas de estilo CSS o iconos. -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Importa un recurso externo, aca anadimos una funte personalizada desde Google Fonts. -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- !Estilos internos -->
+        <!-- Define estilos CSS directamente en el documento HTML. Útil para pruebas rápidas o estilos específicos. -->
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1 {
+                color: #0056b3;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        </style>
+
+        <!-- !URL canónica -->
+        <!-- Evita contenido duplicado al especificar la URL principal de la página. -->
+        <link rel="canonical" href="https://www.mipagina.com">
+
+        <!-- !Datos estructurados (JSON-LD) -->
+        <!-- Proporciona datos estructurados en formato JSON para que los motores de búsqueda entiendan mejor el contenido de la página. -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Curso de Desarrollo Web",
+            "description": "Aprende HTML, CSS y JavaScript desde cero.",
+            "url": "https://www.mipagina.com"
+        }
+        </script>
+
+        <!-- !Scripts -->
+        <!-- Vincula un archivo JavaScript externo y asegura que se cargue después del contenido principal. -->
+        <script src="scripts.js" defer></script>
+    </head>
+    
+    <body>
+        <header>
+        <!-- !<header>
+        Define el encabezado de la página.
+        Usualmente contiene elementos como el logo, título del sitio y barra de navegación.
+        -->
+            <h1>Mi Página Web</h1>
+            <img src="./\assets/logo.png" alt="logo" />
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+        <!-- !<main>
+        Contiene el contenido principal del documento.
+        Este elemento es fundamental para la accesibilidad y la semántica de la página. -->
+            
+            <!-- !<section> / <article> / <aside>
+            Estas etiquetas se usan dentro de <main> para organizar el contenido en bloques:
+            <section>: Para agrupar contenido temático.
+            <article>: Para contenido independiente, como noticias o blogs.
+            <aside>: Para información complementaria, como enlaces o anuncios
+            -->
+            <section id="inicio">
+                <h2>Bienvenidos</h2>
+                <p>Esta es la página principal de mi sitio web.</p>
+                <article>
+                    <h3>Artículo 1</h3>
+                    <p>Contenido del artículo.</p>
+                </article>
+                <article>
+                    <h3>Artículo 2</h3>
+                    <p>Contenido del artículo.</p>
+                </article>
+            </section>
+            
+            <section id="sobre-nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Información sobre nuestra empresa.</p>
+               
+                <!-- !<figure> y <img> (Imágenes y elementos visuales)
+                Las imágenes deben estar dentro de etiquetas <figure> para describirlas semánticamente.
+                Agrega siempre un atributo alt para accesibilidad. -->
+                <figure>
+                    <img src="./assets/logo.png" alt="Descripción de la imagen">
+                    <figcaption>Descripción breve de la imagen</figcaption>
+                </figure>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Formulario de contacto.</p>
+                
+                <!-- !formulario de contacto. 
+                Si la página requiere interacción, los formularios son fundamentales.
+                -->
+                <form action="/enviar" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <!-- !Etiquetas Autcontenidas -->
+            <!-- <div>
+                <samp>Elemento 1</samp> <br> <samp>Elemento 2</samp>
+                <hr>
+                <hr style="height: 5px; border-radius: 10px; background-color: green;">
+                <img src="./assets/logo.png" alt="Descripción de la imagen">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                <meta charset="UTF-8">
+                <link rel="stylesheet" href="styles.css">
+                <video controls>
+                   <source src="video.mp4" type="video/mp4">
+                   <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+               </video>
+               <map name="mapa-ejemplo">
+                   <area shape="rect" coords="0,0,82,126" href="enlace.html" alt="Enlace">
+               </map>
+               <base href="https://www.mipagina.com/">
+               <table>
+                   <col style="background-color: red">
+                   <tr><td>Ejemplos</td></tr>
+                </table>
+                <embed src="archivo.pdf" type="application/pdf">
+                <p>Este es un texto <wbr> muy largo.</p>
+            </div> -->
+            
+
+            <!-- !Accesibilidad-->
+             <div>
+                <form>
+                    <!-- Label describe el campo -->
+                    <label for="nombre">Nombre:</label>
+                    <!-- Campo de entrada asociado con una descripción adicional -->
+                    <input type="text" id="nombre" name="nombre" required aria-describedby="nombre-ayuda">
+                    <!-- Descripción adicional para el lector de pantalla -->
+                    <small id="nombre-ayuda">Por favor, ingresa tu nombre completo. Este campo es obligatorio.</small>
+                </form>
+             </div>
+
+        </main>
+
+        <footer>
+        <!-- !El <footer
+         Colocado antes de los scripts, contiene información complementaria o de cierre, 
+         como derechos de autor, enlaces secundarios o contacto.
+        ? Fuera del <main> (lo más común):
+        Si el <footer> contiene información global, como derechos de autor o navegación secundaria.
+        ? Dentro del <main> (casos específicos):
+        Si el <footer> está directamente relacionado con el contenido principal o es parte de una sección específica.
+        -->
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#privacidad">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </footer>  
+
+          <!-- !<script>
+            Colocado JUSTO al final del <body> para no bloquear la carga del contenido principal de la página.
+            Esto asegura que el contenido principal de la página se cargue primero, mejorando la experiencia
+            del usuario y el rendimiento de la página.
+          -->
+          <script src="scripts.js"></script>
+    </body>
+</html>

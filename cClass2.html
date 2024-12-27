@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Completa de HTML</title>
+    <meta name="description" content="Ejemplo completo de una estructura HTML con elementos básicos y semánticos.">
+    <link rel="stylesheet" href="styles.css"> <!-- Hoja de estilos externa -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <style>
+        /* table {
+            border: 10px dotted rgb(238, 154, 154);
+        } */
+     </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos a mi Sitio Web</h1>  <!-- !Debe ser el Unico en esta pag -->
+        <nav>  <!-- !Navegacion -->
+            <ul>  <!-- !Lista Desordenada -->
+                <li><a href="#seccion-figcaption">Figure y Figcaption</a></li> <!-- !Items de Lista -->
+                <li><a href="#seccion-listas">Listas</a></li> <!-- !Items de Lista -->
+                <li><a href="#seccion-tabla">Tabla</a></li>
+                <li><a href="#seccion-formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <hr> <!-- !Separador -->
+        <!-- !Sección de Figure -->
+        <section id="seccion-figcaption">
+            <h2>Seccion 1: Ejemplo de Contencion con Fifure</h2>
+            
+            <h3>En img:</h3>
+            <figure> <!-- !aqui -->
+                <img src="grafico.jpg" alt="Gráfico de barras">
+                <figcaption>
+                    <p>Este gráfico muestra el crecimiento anual.</p>
+                    <ul>
+                        <li>Año 1: 10%</li>
+                        <li>Año 2: 15%</li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+            <h3>en video:</h3>
+            <figure> <!-- !aqui -->
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <figcaption>Este es un video explicativo.</figcaption>
+            </figure>
+
+            <h3>en tabla:</h3>
+             <figure> <!-- !aqui -->
+                <table>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                </table>
+                <figcaption>Tabla con información adicional.</figcaption>
+            </figure>
+        </section>
+        <hr> <!-- !Separador -->
+
+        <!-- !Sección de listas -->
+        <section id="seccion-listas">
+            <h2>Seccion 2: Ejemplo de Listas</h2>
+            <h3>Lista no ordenada:</h3>
+            <ul type="square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Lista ordenada:</h3>
+            <ol start="2">
+                <li>Planificar el diseño</li>
+                <li>Escribir el código</li>
+                <li>Probar y lanzar</li>
+            </ol>
+        </section>
+        <hr> <!-- !Separador -->
+
+        <!-- Sección de tabla -->
+        <section id="seccion-tabla">
+            <h2>Ejemplo de Tabla</h2>
+            <!-- border Añade un borde visible a la tabla, 
+             se recomienda usar CSS en lugar de este atributo para un diseño más moderno: -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th title="campo producto">Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzanas</td>
+                        <td>$2.00</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Plátanos</td>
+                        <td>$1.50</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <!--colspan: Une varias columnas en una única celda, 
+                        útil para encabezados o resúmenes de datos. -->
+                        <td colspan="2">Total</td>
+                        <td>13</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Sección de formulario -->
+        <section id="seccion-formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <hr>
+        <hr>
+
+        <!-- !Atributos   -->
+         <div id="seccion-attr" data-id="1234" hidden>Contenido de Atributos
+            <p class="texto-destacado">Este texto tiene estilo especial.</p>
+            <h3 style="color: blue; text-align: center;">Título en azul</h3>
+            <!-- nota: <abbr> para representar abreviaciones o acrónimos. 
+            Este elemento permite incluir un texto abreviado. -->
+            <p>Visita nuestro sitio web: <abbr title="World Wide Web">WWW</abbr>.</p>
+         </div>
+
+         <!-- !Atributos PARA MULTIMEDIA -->
+        <div>
+            <!-- !Atributo loading -->
+            <div>
+
+                <img src="imagen.jpg" alt="Descripción" loading="lazy">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" loading="eager"></iframe>
+
+            </div>
+
+
+
+
+            <figure>
+                <img src="./assets/logo.png" alt="Logo" width="400" height="315" >
+                <figcaption>Esta es una descripción de la imagen.</figcaption>
+            </figure>
+
+<p>aquiii</p>
+            <video controls autoplay loop muted poster="imagen_poster.jpg" class="fixed" width="640" height="360" >
+                <source src="https://videos.p.mp4" type="video/mp4">
+                <source src="ruta_del_video.webm" type="video/webm">
+                <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+                Tu navegador no soporta el elemento <code>video</code>.
+            </video>
+
+            <br>
+            <!-- !AUDIO-->
+            <div>Audio!
+                <audio controls autoplay loop muted class="fixed" style="width: 500px;" preload="none">
+                    <source src="./assets/audio.mp3" type="video/mp4">
+                    <source src="ruta_del_audio.ogg" type="audio/ogg">
+                    Tu navegador no soporta el elemento <code>Audio</code>.
+                </audio>
+            </div>
+         
+         <!-- ! iframe-->
+            <figure>
+                <iframe 
+                src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345092466!2d144.9537353153164!3d-37.81627997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f5c7%3A0x5045675218ceed30!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1610000000000!5m2!1sen!2sau" 
+                width="600" height="450" style="border:1;" allowfullscreen loading="lazy"></iframe>
+                <caption>Mapa de ubicación</caption>
+            </figure>
+
+            <figure>
+                <iframe 
+                src="https://www.youtube.com/embed/LRTOUqLmuAU" title="YouTube video player"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                <caption>YouTube video player</caption>
+            </figure>
+
+
+
+            <img src="https://upload.wikimedia_logo.svg.png" alt="Logo">
+            <audio src="audio.mp3" controls></audio>
+            <script src="app.js"></script>
+            <br>
+            <iframe 
+                width="400" height="315" src="https://www.youtube.com/embed/LRTOUqLmuAU" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <br>
+
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Ir a Google</a>
+            <a href="#seccion-nosotros">Quienes somos </a>
+
+
+            <link rel="stylesheet" href="styles.css">
+     </div>
+        
+         <!-- !TAILWIND 
+        <div class="relative overflow-hidden shadow-md rounded-lg">
+            <table class="table-fixed w-full text-left">
+                <thead class="uppercase bg-[#6b7280] text-[#e5e7eb]" style="background-color: #6b7280; color: #e5e7eb;">
+                    <tr>
+                        
+                        <td class="py-1 border text-center  p-4" contenteditable="true">Product-ID</td>
+                        <td class="py-1 border text-center  p-4" contenteditable="true">Description</td>
+                        <td class="py-1 border text-center  p-4" contenteditable="true">Price</td>
+                      
+                    </tr>
+                </thead>
+                <tbody class="bg-white text-gray-500 bg-[#FFFFFF] text-[#6b7280]" style="background-color: #FFFFFF; color: #6b7280;">
+             
+                    <tr class=" py-7">
+                     
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">YY-853581</td>
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">Notebook Basic</td>
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">$ 299</td>
+                       
+                    </tr>
+                    <tr class=" py-7">
+               
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">YY-853599</td>
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">Notebook Pro</td>
+                        <td class=" py-7 border text-center  p-4" contenteditable="true">$ 849</td>
+                   
+                    </tr>
+                    <tr class=" py-7">
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                    </tr>
+                    <tr class=" py-7">
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                        <td contenteditable="true" class=" py-7 border text-center  p-4"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        -->
+   
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#seccion-figcaption">Volver a Figure y figcaption</a></li>
+                <li><a href="#seccion-listas">Volver a Listas</a></li>
+                <li><a href="#seccion-tabla">Volver a Tabla</a></li>
+                <li><a href="#seccion-formulario">Volver a Formulario</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

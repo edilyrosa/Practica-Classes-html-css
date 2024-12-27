@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Tablas</h1>
+        
+        <table width="50%" border="2">
+            <tr>
+                <td width="50%">Celda 1</td>
+                <td width="50%">Celda 2</td>
+            </tr>
+        </table>
+    
+       
+        <h2>COL GROUP</h2>
+        <table border="2">
+            <colgroup>
+                <col width="80%">
+                <col width="100%">
+            </colgroup>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+        </table>
+
+
+        <table border="3">
+            <caption>Lista de Estudiantes</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>25</td>
+                    <td>Licenciatura</td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>30</td>
+                    <td>Maestría</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Fin de la tabla</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <h2>usando colspan y rowspan</h2>
+
+        <table border="1">
+            <tr>
+            <td rowspan="2">Fila 1, Columna 1 (rowspan 2)</td>
+            <td colspan="2">Fila 1, Columna 2 y 3 (colspan 2)</td>
+            </tr>
+            <tr>
+                <td>Fila 2, Columna 2</td>
+                <td>Fila 2, Columna 3</td>
+        <!-- !<td>EXTRA!!</td>  DESBORDARIA--> 
+            </tr>
+            <tr>
+            <td>Fila 3, Columna 1</td>
+            <td>Fila 3, Columna 2</td>
+            <td>Fila 3, Columna 3</td>
+            </tr>
+        </table>
+      
+    </section>
+</body>
+</html>
